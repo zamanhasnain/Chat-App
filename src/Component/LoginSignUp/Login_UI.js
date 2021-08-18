@@ -10,11 +10,11 @@ function LoginSignUp_UI(props) {
           <p id="Login_text">Login</p>
           <label>
             Enter Username:
-            <input type="text" name="name" onChange={(e) => { props.data.username = e.target.value }} />
+            <input type="text" name="name" onChange={(e) => { props.data.username = e.target.value}} />
           </label>
         </form>
         <div className="LoginSignup_btn_divider">
-          <button id="btn_attempt_login_signup" onClick={() => props.attemptLogin()}>Login</button>
+          <button id="btn_attempt_login_signup" onClick={() => props.handleLogin()}>Login</button>
         </div>
       </div>
     </div>

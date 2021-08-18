@@ -8,8 +8,7 @@ class LoginSignUp extends Component {
     this.state = {
       props:props,
       loginDetails:{username:null,password:null},
-      signupDetails:{username:null,email:null,password:null},
-      isLoginPageVisible : true
+      signupDetails:{username:null,email:null,password:null}
     };
     this.handleLogin = this.handleLogin.bind(this)
   }
@@ -17,8 +16,9 @@ class LoginSignUp extends Component {
   handleLogin(e) {
     // write Login Code Here
     //also save login state to local storage
-    if(this.state.loginDetails.username!=null && this.state.loginDetails.password!=null){
+    if(this.state.loginDetails.username!=null){
       this.state.props.setLoggedIn(true)
+      console.log("asljkfkasjfikajskfjk")
     }
   }
   
@@ -28,8 +28,7 @@ class LoginSignUp extends Component {
         <div className="LoginSignUp_inner">
             <Login_UI
               data={this.state.loginDetails}
-              attemptLogin={this.handleLogin}
-              isLoginPageVisible={this.isLoginPageVisible}
+              handleLogin={this.handleLogin}
             />
         </div>
       </div>
