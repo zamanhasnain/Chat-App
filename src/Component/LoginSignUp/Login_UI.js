@@ -5,11 +5,11 @@ function LoginSignUp_UI(props) {
     <div className="Login_Page">
       {/* Divider first*/}
       <div className="LoginSignUp_divider_first">
-        <h3 id="LoginSignup_AppName">ChatApp</h3>
+        <h3 id="LoginSignup_AppName">Chat App</h3>
         <form className="LoginSignUp_form">
           <p id="Login_text">Login</p>
           <label>
-            Enter Username:
+            Enter Your Name:
             <input type="text" name="name" onChange={(e) => { props.data.username = e.target.value}} />
           </label>
         </form>

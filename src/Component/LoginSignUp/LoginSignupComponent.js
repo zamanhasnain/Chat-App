@@ -3,7 +3,6 @@ import Login_UI from "./Login_UI";
 
 class LoginSignUp extends Component {
   constructor(props) {
-    {console.log(props)}
     super();
     this.state = {
       props:props,
@@ -18,6 +17,7 @@ class LoginSignUp extends Component {
     //also save login state to local storage
     if(this.state.loginDetails.username!=null){
       this.state.props.setLoggedIn(true)
+      this.state.props.setUserName(this.state.loginDetails.username)
       console.log("asljkfkasjfikajskfjk")
     }
   }

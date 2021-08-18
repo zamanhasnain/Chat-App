@@ -20,23 +20,23 @@ if (!firebase.apps.length) {
 firebase.firestore().settings({
   timestampsInSnapshots: true
 })
-function PushMessage(msg){
+function PushMessage(msg,userName){
   firebase
   .database()
   .ref("messages")
-  .push({"User_Ankush":msg,
+  .push({[userName]:msg,
   });
 }
 function query(){
 }
 const auth=firebase.auth();
 
-function ChatAppComponent() {
+function ChatAppComponent(props) {
   let text="red"
   return (
     <div className="App">
       <input type="text" onChange={(e)=>text=(e.target.value)}></input>
-      <button onClick={()=>PushMessage(text)}>Send Message</button>
+      <button onClick={()=>PushMessage(text,props.userName)}>Send Message</button>
     </div>
 
   );
