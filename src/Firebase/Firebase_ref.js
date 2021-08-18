@@ -1,5 +1,5 @@
 import firebase from 'firebase'
-const config={
+const config = {
   apiKey: "AIzaSyB3f6X2Bn6pyfPGy4Hr4MdtYVkqZNu8eFk",
   authDomain: "chat-app-70d02.firebaseapp.com",
   projectId: "chat-app-70d02",
@@ -10,19 +10,39 @@ const config={
 }
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
-}else {
-  firebase.app(); 
+} else {
+  firebase.app();
 }
-const auth=firebase.auth();
 
-function PushMessageToFirebase(msg,userName){
-  firebase
-  .database()
-  .ref("messages")
-  .push({[userName]:msg,
-  });
+//
+function GetAllUsers() {
+  return firebase.database().ref("users")
 }
+function GetAllMessages(){
+  return firebase.database().ref("messages")
+}
+
+function PushMessageToFirebase(msg, from,to) {
+  firebase
+    .database()
+    .ref("messages")
+    .push({
+      "msg":msg,
+      "from":from,
+      "to":to
+    });
+}
+
+function CreateNewUser(userName) {
+  firebase
+    .database()
+    .ref("users")
+    .push({
+      "userName": userName,
+    });
+}
+
 
 export {
-  PushMessageToFirebase,
+  PushMessageToFirebase, CreateNewUser, GetAllUsers,GetAllMessages,
 }

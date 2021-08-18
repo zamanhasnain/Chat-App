@@ -14,7 +14,8 @@ function App(){
         setLoggedIn={setLoggedIn}
         setUserName={setUserName}/>)
       :
-      (<ChatAppComponent userName={userName}/>)}
+      (<ChatAppComponent userName={userName}/>)
+      }
     </div>
 
   );

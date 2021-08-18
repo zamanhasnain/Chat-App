@@ -1,0 +1,6 @@
+.SendMessageComponent{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
