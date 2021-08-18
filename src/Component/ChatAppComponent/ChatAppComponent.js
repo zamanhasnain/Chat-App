@@ -1,10 +1,7 @@
-import './App.css';
 import React from 'react'
 //sdk part
 import firebase from 'firebase';
 import 'firebase/auth'
-import LoginSignUp from './Component/LoginSignUp/LoginSignupComponent';
-import ChatAppComponent from './Component/ChatAppComponent/ChatAppComponent';
 const config={
   apiKey: "AIzaSyB3f6X2Bn6pyfPGy4Hr4MdtYVkqZNu8eFk",
   authDomain: "chat-app-70d02.firebaseapp.com",
@@ -20,6 +17,9 @@ if (!firebase.apps.length) {
   firebase.app(); 
 }
 
+firebase.firestore().settings({
+  timestampsInSnapshots: true
+})
 function PushMessage(msg){
   firebase
   .database()
@@ -30,17 +30,15 @@ function PushMessage(msg){
 function query(){
 }
 const auth=firebase.auth();
-function App() {
 
-  const[isLoggedIn, setLoggedIn]=React.useState(false)
+function ChatAppComponent() {
+  let text="red"
   return (
     <div className="App">
-      {(isLoggedIn==false)?
-      (<LoginSignUp setLoggedIn={setLoggedIn}/>)
-      :
-      (<ChatAppComponent/>)}
+      <input type="text" onChange={(e)=>text=(e.target.value)}></input>
+      <button onClick={()=>PushMessage(text)}>Send Message</button>
     </div>
 
   );
 }
-export default App;
+export default ChatAppComponent;
