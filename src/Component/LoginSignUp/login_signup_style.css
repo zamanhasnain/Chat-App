@@ -24,25 +24,9 @@
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
-.Signup_Page{
-    border: 1px solid var(--BorderCard);
-    display: flex;
-    width: 65vw;
-    height: 60vh;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-}
+
 .LoginSignUp_divider_first{
     width: 100vw;
-}
-.LoginSignUp_divider_second{
-  
-}
-#LoginSignUp_img{width: 100%; /* or any custom size */
-    height: 100%; 
-    object-fit:fill;
-    border-radius: 5px;
-    border: 1px solid var(--BorderCard);
 }
 #Login_text{
     padding: 10px;
@@ -80,26 +64,7 @@
     border: 1px solid var(--BorderCard);
     
 }
-#btn_attempt_login_signup_secondary{
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 10vw;
-    font-size: 3.5em;
-    border-radius: 30px;
-    background-color:rgb(255, 73, 60);
-    color: #ffffff;
-    border: 1px solid var(--BorderCard);
-    
-}
+
 #btn_attempt_login_signup:hover{
     font-size: 4em;
-}
-#btn_attempt_login_signup_secondary:hover{
-    font-size: 4em;
-}
-.LoginSignup_btn_divider{
-    display: flex;
-    flex-direction: column;
 }

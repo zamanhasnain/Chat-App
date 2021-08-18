@@ -9,18 +9,12 @@ function LoginSignUp_UI(props) {
         <form className="LoginSignUp_form">
           <p id="Login_text">Login</p>
           <label>
-            Username:
+            Enter Username:
             <input type="text" name="name" onChange={(e) => { props.data.username = e.target.value }} />
-          </label>
-      
-          <label>
-            Password:
-            <input type="text" name="name" onChange={(e) => { props.data.password = e.target.value }} />
           </label>
         </form>
         <div className="LoginSignup_btn_divider">
           <button id="btn_attempt_login_signup" onClick={() => props.attemptLogin()}>Login</button>
-          <button id="btn_attempt_login_signup_secondary" onClick={() => props.handlecurrentPage()}>{(props.isLoginPageVisible == true) ? ("Login") : ("Signup")}</button>
         </div>
       </div>
     </div>
