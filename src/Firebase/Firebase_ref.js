@@ -13,7 +13,6 @@ if (!firebase.apps.length) {
 }else {
   firebase.app(); 
 }
-const auth=firebase.auth();
 
 function PushMessage(msg,userName){
   firebase
@@ -24,5 +23,3 @@ function PushMessage(msg,userName){
 }
 
 export const myFirebase = firebase
-export const myFirestore = firebase.firestore()
-export const myStorage = firebase.storage()

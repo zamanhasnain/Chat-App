@@ -18,7 +18,6 @@ class LoginSignUp extends Component {
     if(this.state.loginDetails.username!=null){
       this.state.props.setLoggedIn(true)
       this.state.props.setUserName(this.state.loginDetails.username)
-      console.log("asljkfkasjfikajskfjk")
     }
   }
   
