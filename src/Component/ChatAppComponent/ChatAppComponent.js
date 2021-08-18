@@ -2,6 +2,7 @@ import React from 'react'
 //sdk part
 import firebase from 'firebase';
 import 'firebase/auth'
+
 const config={
   apiKey: "AIzaSyB3f6X2Bn6pyfPGy4Hr4MdtYVkqZNu8eFk",
   authDomain: "chat-app-70d02.firebaseapp.com",
@@ -34,7 +35,7 @@ const auth=firebase.auth();
 function ChatAppComponent(props) {
   let text="red"
   return (
-    <div className="App">
+    <div className="ChatComponent">
       <input type="text" onChange={(e)=>text=(e.target.value)}></input>
       <button onClick={()=>PushMessage(text,props.userName)}>Send Message</button>
     </div>

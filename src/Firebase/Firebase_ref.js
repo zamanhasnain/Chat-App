@@ -14,11 +14,12 @@ if (!firebase.apps.length) {
   firebase.app(); 
 }
 const auth=firebase.auth();
-function PushMessage(msg){
+
+function PushMessage(msg,userName){
   firebase
   .database()
   .ref("messages")
-  .push({"User_Ankush":msg,
+  .push({[userName]:msg,
   });
 }
 
