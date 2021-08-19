@@ -1,23 +1,42 @@
-.UserComponent{   
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+.UserComponent{  
+    padding: 30px;
 }
-
+.Card{
+    background-color: #131C21;
+    display: flex;
+    flex-direction: column;
+}
 .User{
-    background-color: #ffffff;
-    margin: 5px;
-    padding: 20px;
+    color: #ffffff;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
 }
 #btn_user{
+    text-align: left;
+    margin-left: 20px;
     width: 80vw;
     padding: 20px;
 }
 #img_user{
-    width: 20vw;
-    width: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-left: 30px;
+    margin-bottom: auto;
 }
+.User.User_selected{
+    background-color: #323739;
+}
+.User:hover{
+    background-color: #323739;
+}
+
+.divider_line {
+    width: 80%;
+    border-top: 1px solid rgba(253, 253, 253, 0.521);
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }

@@ -5,7 +5,9 @@
     flex-direction: row;
     align-items: center;
     background-color: var(--BackgroundColor);
-    font-size: 5px;
+    font-size: 5px;  
+    background:url('https://influence.digital/wp-content/uploads/2020/12/social-media-sketch-seamless-doodle-pattern-social-media-sketch-vector-seamless-doodle-pattern-gray-icons-white-background-174378665-1-320x162.jpg');  
+
 }
 .LoginSignUp_inner{
     margin-left: auto;

@@ -7,8 +7,6 @@ function PushMessage(msg,from,to) {
 }
 
 function SendMessageComponent(props) {
-
-    {console.log(props)}
     let text = "sample_message"
     return (
         <div className="SendMessageComponent">
