@@ -3,9 +3,9 @@
   display: flex;
 }
 .div_users{
-  
   background-color: green;
   width: 40%;
+  height: 100%;
 }
 .div_chat{
   display: flex; 
