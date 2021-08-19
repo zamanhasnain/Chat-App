@@ -2,7 +2,7 @@ import './chat_style.css'
 import React from 'react'
 import UsersListComponent from '../UsersListComponent/UsersListComponent';
 import SendMessageComponent from '../SendMessagesComponent/SendMessagesComponent';
-import UserMessagesComponent from '../UserMessageComponent/UserMessageComponent';
+import UserMessagesComponent from '../UserMessageComponent/UserMessageComponent.js';
 
 
 function ChatAppComponent(props) {

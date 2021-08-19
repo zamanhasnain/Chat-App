@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { GetAllMessages } from '../../Firebase/Firebase_ref';
 
 let url = 'https://rameshhospitals.com/wp-content/uploads/2019/07/3.jpg.png';
-function UserMessagesComponent(props) {
+function UserMessageComponent(props) {
     let message_to = props.message_to;      //  friend
     let message_from = props.message_from;  // my name
     const [messages, setMessages] = React.useState([])
@@ -26,4 +26,4 @@ function UserMessagesComponent(props) {
         </div>
     );
 }
-export default UserMessagesComponent;
+export default UserMessageComponent;
