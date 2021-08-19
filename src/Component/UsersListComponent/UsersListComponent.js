@@ -9,11 +9,10 @@ function UsersListComponent(props) {
     let x = [];
     React.useEffect(() => {
         GetAllUsers().on('child_added', function (snapshot) {
-            x.push(snapshot.val())  
+            x.push(snapshot.val())
             setUsers(x)
-        }); 
-        
-    },users)
+        });
+    }, [users])
 
 
     let text = "sample_message"
