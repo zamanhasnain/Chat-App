@@ -19,10 +19,13 @@ function UsersListComponent(props) {
     return (
         <div className="UserComponent">
                 {(users).map((user) => {
-                    return (<div className="User">
+                    return (
+                    <div className="User" onClick={(e)=>{{props.set_message_to(e.target.textContent)}}}>
                         <img id="img_user" src={url}></img>
-                        <p onClick={(e)=>{{props.set_message_to(e.target.textContent)}}} id="btn_user" >{user.userName}</p>
-                    </div>)
+                        <p  id="btn_user" >{user.userName}</p>
+                    </div>
+                   
+                    )
                 })}
 
         </div>

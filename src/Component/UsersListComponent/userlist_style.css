@@ -1,23 +1,31 @@
 .UserComponent{
-    padding-left: 20px;
+    /* padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 20px;
+    padding-right: 20px; */
+    margin-top: 2px;
 }
 
 .User{
-    background-color: #ffffff;
-    margin: 5px;
-    padding: 20px;
+    background-color: white;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+}
+.User>p{
+    margin: 2px;
 }
 #btn_user{
     width: 80vw;
-    padding: 20px;
+    padding: 10px;
 }
 #img_user{
-    width: 20vw;
     width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
