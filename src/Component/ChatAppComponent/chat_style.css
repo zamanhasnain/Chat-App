@@ -16,9 +16,23 @@
   margin-top: 20px;
   position: fixed;
   overflow-y: scroll;
-  background-image: url('background.jpg');
+  background-image: url('./51edc046eb80046ee4755ee71d0f19ca.jpeg');
 
 }
+.send_message{
+   width: 54vw;
+   height:6vh;
+   outline: none;
+   border: 1px solid black;
+   border-radius: 30px 30px 30px 30px;
+   margin-right: 6px;
+}
+.button_send_message{
+  border-radius: 30px 30px 30px 30px;
+  outline: none;
+  border: 2px black;
+}
+
 .div_messages{
   height: 100vh;
 }

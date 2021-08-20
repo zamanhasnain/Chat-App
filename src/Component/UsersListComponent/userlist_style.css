@@ -1,5 +1,7 @@
 .UserComponent{  
-    padding: 30px;
+    padding: 10px;
+   
+
 }
 .Card{
     background-color: #131C21;
@@ -8,9 +10,11 @@
 }
 .User{
     color: #ffffff;
-    padding: 10px;
     display: flex;
     flex-direction: row;
+    border-radius: 10px 10px 10px 10px ;
+    outline:none;
+    border-bottom:1px solid #c1ced3;
 }
 #btn_user{
     text-align: left;
@@ -26,17 +30,17 @@
     margin-bottom: auto;
 }
 .User.User_selected{
-    background-color: #323739;
+    background-color: #c1ced3;
 }
 .User:hover{
-    background-color: #323739;
+    background-color: #c1ced3;
 }
 
 .divider_line {
-    width: 80%;
-    border-top: 1px solid rgba(253, 253, 253, 0.521);
+    width: 100%;
+    
     margin-left: auto;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-  }
+  } 
